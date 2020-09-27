@@ -16,12 +16,16 @@ public class SceneController : MonoBehaviour
 
     #region Public Variables
     public GameObject pauseScreen;
+    public string mainMenuName;
+    public string HUDName;
     #endregion
 
     #region Initialization Methods
     private void Awake()
     {
-
+        // Load the MainMenu and HUD scenes on start.
+        AddScene(mainMenuName);
+        AddScene(HUDName);
     }
 
     private void Start()
