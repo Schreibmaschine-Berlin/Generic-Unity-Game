@@ -23,13 +23,22 @@ public class SceneController : MonoBehaviour
     #region Initialization Methods
     private void Awake()
     {
-        // Load the MainMenu and HUD scenes on start.
-        AddScene(mainMenuName);
-        AddScene(HUDName);
+        
     }
 
     private void Start()
     {
+        // Load the MainMenu and HUD scenes on start.
+        if (!SceneManager.GetSceneByName(mainMenuName).isLoaded)
+        {
+            AddScene(mainMenuName);
+        }
+
+        if (!SceneManager.GetSceneByName(HUDName).isLoaded)
+        {
+            AddScene(HUDName);
+        }
+
         p_SceneName = SceneManager.GetActiveScene().name;
     }
     #endregion

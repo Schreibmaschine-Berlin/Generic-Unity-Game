@@ -9,21 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/HUD.unity
     guid: e50931d57d1475346931d9d3bbcaf736
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Main Menu.unity
     guid: f5972b2befcd5964bb6e4b4f80cd10e0
   - enabled: 1
-    path: Assets/Scenes/SceneA.unity
+    path: Assets/Scenes/Scene A.unity
     guid: 48890a35418ccb84ab07b4d04672816e
   - enabled: 1
-    path: Assets/Scenes/SceneAB UI.unity
+    path: Assets/Scenes/Scene AB UI.unity
     guid: 45942f146b1d1ec428f9b0c6d71df18b
   - enabled: 1
-    path: Assets/Scenes/SceneB.unity
+    path: Assets/Scenes/Scene B.unity
     guid: b55a758639837754a869962eab7e5e32
   - enabled: 1
-    path: Assets/Scenes/SceneManager.unity
+    path: Assets/Scenes/Scene Manager.unity
     guid: cace20e9a68c98b43ac3a6d64b3b8bcc
   - enabled: 1
-    path: Assets/Scenes/LoadScene1.unity
+    path: Assets/Scenes/Load Scene 1.unity
     guid: e2be18da0c6180e4997889ac84c9f850
   m_configObjects: {}
