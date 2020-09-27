@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class LoadSceneButton : MonoBehaviour
@@ -26,7 +27,14 @@ public class LoadSceneButton : MonoBehaviour
     {
         Dropdown dropdown = sceneSelectorDropdown.GetComponent<Dropdown>();
         string sceneName = dropdown.options[dropdown.value].text;
-        p_SceneController.GetComponent<SceneController>().AddScene(sceneName);
+
+        if (!SceneManager.GetSceneByName(sceneName).isLoaded)
+        {
+            p_SceneController.GetComponent<SceneController>().AddScene(sceneName);
+        }
+
+        // TODO: Refactor into a ChangeScene, where the other dropdown scenes are unloaded and the
+        // selected scene gets loaded.
     }
     #endregion
 }
